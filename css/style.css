@@ -1,0 +1,11 @@
+.btn-info:hover{
+   background-color: coral;
+    border: 1px solid white;
+}
+
+.inner-box {
+    margin-top: 10px;
+}
+.margin {
+     margin-top: 10px;
+}
