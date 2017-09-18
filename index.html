@@ -1,0 +1,235 @@
+    <DOCTYPE html>
+        <html>
+
+        <head>
+            <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+            <script src="scripts/bootstrap.js"></script>
+            <script src="scripts/bootstrap.min.js"></script>
+            <script src="scripts/script.js"></script>
+            <link type="text/css" rel="stylesheet" href="css/bootstrap-theme.css">
+            <link type="text/css" rel="stylesheet" href="css/bootstrap-theme.min.css">
+            <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+            <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+            <link type="text/css" rel="stylesheet" href="css/style.css">
+            <title>Travel Website</title>
+        </head>
+
+        <body>
+            <div class="container-fluid col-md-10 col-md-offset-1 transparent jumbotron">
+            <div class="row" id="tabs">
+                <div class="col-md-10 col-md-offset-1 tab-container">
+                    <div class="col-md-6 col-md-offset-3">
+                        <ul class="nav nav-pills">
+                            <li id="btn-flight" class="active">
+                                <a href="#flight">Flights</a>
+                            </li>
+                            <li id="btn-hotel">
+                                <a href="#hotel">
+                                    Hotels
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-10 col-md-offset-1 form-container">
+                    <div class="container-fluid">
+                        <form id="flight">
+                            <div class="row margin">
+                                <div class="col-md-10">
+                                    <ul class="nav nav-tabs">
+                                        <li class="active"><a data-toggle="tab" href="#home">Return</a></li>
+                                        <li><a data-toggle="tab" href="#menu1">One Way</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row margin">
+                                <div class="tab-content">
+                                    <div id="home" class="tab-pane fade in active">
+                                        <form>
+                                            <div class="row" >
+                                                <div class="col-md-5">
+                                                    <div class="form-group">
+                                                        <label for="from">Source</label>
+                                                        <input type="text" class="form-control" id="from">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-5">
+                                                    <div class="form-group">
+                                                        <label for="to">Destination</label>
+                                                        <input type="text" class="form-control" id="to">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <div class="form-group">
+                                                        <label for="departure">Departing</label>
+                                                        <div class="input-group">
+                                                            <input type="date" name="departure" id="" class="add-on" placeholder="mm/dd/yyyy">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="form-group">
+                                                         <label for="return">Returning</label>
+                                                        <div class="input-group">
+                                                            <input type="date" name="return" id="" class="add-on" placeholder="mm/dd/yyyy">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <div class="form-group">
+                                                        <label for="sel1">Adults</label>
+                                                        <select class="form-control" id="sel1">
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label for="sel1">Children</label>
+                                                    <select class="form-control" id="sel1">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <button type="submit" class="btn btn-info">Search</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div id="menu1" class="tab-pane fade">
+                                     <form>
+                                        <div class="row" >
+                                            <div class="col-md-5">
+                                                <div class="form-group">
+                                                    <label for="from">Source</label>
+                                                    <input type="text" class="form-control" id="from">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <div class="form-group">
+                                                    <label for="to">Destination</label>
+                                                    <input type="text" class="form-control" id="to">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label for="departure">Departing</label>
+                                                        <div class="input-group">
+                                                            <input type="date" name="departure" id="" class="add-on" placeholder="mm/dd/yyyy">
+                                                        </div>
+                                                    <label>Departing</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="form-group">
+                                                    <label for="sel1">Adults</label>
+                                                    <select class="form-control" id="sel1">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <label for="sel1">Children</label>
+                                                <select class="form-control" id="sel1">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <button type="submit" class="btn btn-info">Submit</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                    <form id="hotel">
+                        <div class="row margin">
+                            <div class="col-md-10">
+                                <label>Destination</label>
+                                <div class="input-group">
+                                  <input id="destination" type="text" class="form-control" name="destination" placeholder="Destination">
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="dateofbirth">Check-In</label>
+                            <div class="input-group">
+                                <input type="date" name="dateofbirth" id="dateofbirth" class="add-on" placeholder="mm/dd/yyyy">
+                            </div>
+                        </div>   
+                        <div class="col-md-6">
+                            <label for="dateofbirth">Check-Out</label>
+                            <div class="input-group">
+                              <input type="date" name="dateofbirth" id="dateofbirth" class="add-on" placeholder="mm/dd/yyyy"> 
+                            </div>
+                        </div>
+                  <div class="row margin">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="sel1">Rooms</label>
+                            <select class="form-control" id="sel1">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="sel1">Adults</label>
+                            <select class="form-control" id="sel1">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="sel1">Children</label>
+                            <select class="form-control" id="sel1">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <button type="button" class="btn btn-success">Search</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-10">
+
+                    </div>
+          </form>
+            </div>
+        </div>
+        </body>
+
+        </html>
